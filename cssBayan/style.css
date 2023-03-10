@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.accordion {
+  margin: 0 auto;
+  max-width: 900px;
+  margin-bottom: 30px;
+}
+body {
+  margin: 0 auto;
+  font-size: 10px;
+}
+.accordion-title {
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+}
+label {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid rgb(192, 191, 191);
+  border-bottom: 2px solid rgb(192, 191, 191);
+  padding: 15px 0;
+}
+h2 {
+  font-size: 2.2rem;
+}
+label img {
+  width: 30px;
+  height: 30px;
+  transform: rotate(90deg);
+}
+.accordion-tab > img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+input {
+  display: none;
+}
