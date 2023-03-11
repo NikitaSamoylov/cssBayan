@@ -15,6 +15,9 @@ body {
   margin-top: 40px;
   margin-bottom: 130px;
 }
+.accordion-wrapper {
+  padding: 0 15px;
+}
 .accordion-title {
   font-size: 2.8rem;
   margin-bottom: 2.8rem;
@@ -38,7 +41,7 @@ label > img {
   text-align: center;
   padding-top: 7px;
   padding-bottom: 7px;
-  width: 450px;
+  max-width: 450px;
   max-height: 0;
   opacity: 0;
   transition: 0.2s;
@@ -82,5 +85,70 @@ input:checked ~ h2 {
   }
   input:hover ~ label > h2 {
     border-bottom: 0;
+  }
+}
+@media (max-width: 820px) {
+  .accordion-title {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  label > img {
+    max-width: 320px;
+  }
+}
+@media (max-width: 470px) {
+  .accordion-title {
+    font-size: 2.2rem;
+    margin-bottom: 2.2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  label > img {
+    max-width: 290px;
+  }
+}
+@media (max-width: 320px) {
+  .accordion-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  label > img {
+    max-width: 270px;
+  }
+}
+@media (max-width: 300px) {
+  .accordion-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  label > img {
+    max-width: 200px;
+  }
+}
+@media (max-width: 250px) {
+  .accordion-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 0.8rem;
+  }
+  label > img {
+    max-width: 120px;
+    padding-right: 15px;
+  }
+  .arrow {
+    height: 10px;
+    width: 10px;
   }
 }
